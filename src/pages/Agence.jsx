@@ -8,50 +8,52 @@ const Agence = () => {
   const imageDivRef = useRef(null);
   const imageRef = useRef(null);
   const imageArray = [
-    "https://images.pexels.com/photos/33427842/pexels-photo-33427842.jpeg",
-    "https://images.pexels.com/photos/10143324/pexels-photo-10143324.jpeg",
-    "https://images.pexels.com/photos/9464618/pexels-photo-9464618.jpeg",
-    "https://images.pexels.com/photos/5083207/pexels-photo-5083207.jpeg",
-    "https://images.pexels.com/photos/17732320/pexels-photo-17732320.jpeg",
-    "https://images.pexels.com/photos/38215118/pexels-photo-38215118.jpeg",
-    "https://images.pexels.com/photos/26834972/pexels-photo-26834972.jpeg",
-        "https://images.pexels.com/photos/33427842/pexels-photo-33427842.jpeg",
-    "https://images.pexels.com/photos/10143324/pexels-photo-10143324.jpeg",
-    "https://images.pexels.com/photos/9464618/pexels-photo-9464618.jpeg",
-    "https://images.pexels.com/photos/5083207/pexels-photo-5083207.jpeg",
-    "https://images.pexels.com/photos/17732320/pexels-photo-17732320.jpeg",
-    "https://images.pexels.com/photos/38215118/pexels-photo-38215118.jpeg",
-    "https://images.pexels.com/photos/26834972/pexels-photo-26834972.jpeg"
+    "./image/first-img.jpg",
+    "./image/second.jpg",
+    "./image/threed.jpg",
+     "./image/four.jpg",
+     "./image/five.jpg",
+     "./image/six.jpg",
+     "./image/seven.jpg",
+     "./image/eight.jpg",
+     "./image/first-img.jpg",
+    "./image/second.jpg",
+    "./image/threed.jpg",
+     "./image/four.jpg",
+     "./image/five.jpg",
+     "./image/six.jpg",
+     "./image/seven.jpg",
+     "./image/eight.jpg",
+
+   
+
+
   ];
   useGSAP(function () {
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
-        markers: true,
         start: "top 28%",
         end: "top -100%",
         pin: true,
         scrub: 2,
         onUpdate:function(elem){
-          let hup;
-          hup=Math.floor(elem.progress * imageArray.length)
-imageRef.current.src=imageArray[hup]
-console.log(imageRef.current.src)
-        //   let imageIndex;
-        //   if(elem.progress < 1){
-        //     imageIndex=Math.round(elem.progress * imageArray.length)
+       
+          let imageIndex;
+          if(elem.progress < 1){
+            imageIndex=Math.round(elem.progress * imageArray.length)
 
-        //   }else{
-        //     imageIndex=imageArray.length-1
-        //   }
-        // imageRef.current.src=imageArray[imageIndex]
+          }else{
+            imageIndex=imageArray.length-1
+          }
+        imageRef.current.src=imageArray[imageIndex]
         }
       },
     });
   });
 
   return (
-    <div>
+    <div >
       <div className="section1">
         <div
           ref={imageDivRef}
