@@ -53,7 +53,7 @@ const Agence = () => {
   });
 
   return (
-    <div className="text-[#bebebe]">
+    <div className="text-[#333]">
       <div className="section1">
         <div
           ref={imageDivRef}

@@ -5,13 +5,14 @@ import Agence from "./pages/Agence";
 import Projects from "./pages/Projects";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Navbar from "./components/navigation/Navbar";
 
 
 const App = () => {
 
   return (
     <div>
-
+<Navbar/>
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
