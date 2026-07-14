@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 const Stairs = ({children}) => {
   const currentPath = useLocation().pathname;
-  console.log(useLocation().pathname)
+
   let stairParentRef = useRef(null);
   const pageRef = useRef(null)
 
