@@ -90,8 +90,8 @@ const FullScreenNav = () => {
             id="cros-parent"
             className="h-30 w-30 relative cursor-pointer "
           >
-            <div className="h-40 absolute -rotate-45 origin-top w-1 bg-white cros"></div>
-            <div className="h-40 absolute right-0 rotate-45 origin-top w-1 bg-white cros"></div>
+            <div className="md:h-40 h-20 absolute -rotate-45 md:-rotate-45 right-15 md:left-0 origin-top w-1 bg-white cros"></div>
+            <div className="md:h-40 h-20 absolute rotate-45 right-0 md:rotate-45 origin-top w-1 bg-white cros"></div>
           </div>
         </div>
         <div className=" py-10">
