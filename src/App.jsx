@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Navbar from "./components/navigation/Navbar";
+import FullScreenNav from "./components/navigation/FullScreenNav";
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div>
 <Navbar/>
+<FullScreenNav/>
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

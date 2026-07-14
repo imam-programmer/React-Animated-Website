@@ -83,6 +83,7 @@ const Agence = () => {
           </p>
         </div>
       </div>
+      
       <div className="section2 h-screen"></div>
     </div>
   );

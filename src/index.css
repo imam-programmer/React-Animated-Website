@@ -3,3 +3,28 @@ body{
     overflow-x: hidden;
 
 }
+.nav-black:hover .nav-line{
+    background-color: black;
+}
+.moveX{
+    animation:moveAnimation 7s infinite linear;
+
+}
+.moveLink{
+    opacity: 0;
+    transition:all ease 0.3s;
+}
+.link:hover .moveLink{
+    opacity: 1;
+}
+@keyframes moveAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#cros-parent:hover .cros{
+background-color: #d3fd50;
+}
