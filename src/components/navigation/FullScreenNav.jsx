@@ -150,7 +150,7 @@ const FullScreenNav = () => {
                 </h2>
                 <img
                   className="object-cover shrink-0 w-62 h-20 rounded-full"
-                  src="./image/navimage2.jpg"
+                  src="./image/navimage3.jpg"
                   alt=""
                 />
                 <h2 className="whitespace-nowrap text-[7vw] uppercase font-medium text-center">
@@ -158,7 +158,7 @@ const FullScreenNav = () => {
                 </h2>
                 <img
                   className="object-cover shrink-0 w-62 h-20 rounded-full"
-                  src="./image/navImage1.jpg"
+                  src="./image/navimage4.jpg"
                   alt=""
                 />
               </div>
@@ -168,7 +168,7 @@ const FullScreenNav = () => {
                 </h2>
                 <img
                   className="object-cover shrink-0 w-62 h-25 rounded-full"
-                  src="./image/navimage2.jpg"
+                  src="./image/navimage3.jpg"
                   alt=""
                 />
                 <h2 className="whitespace-nowrap text-[7vw] uppercase font-medium text-center">
@@ -238,7 +238,7 @@ const FullScreenNav = () => {
                 </h2>
                 <img
                   className="object-cover shrink-0 w-62 h-20 rounded-full"
-                  src="./image/navimage2.jpg"
+                  src="./image/navimage3.jpg"
                   alt=""
                 />
                 <h2 className="whitespace-nowrap text-[7vw] uppercase font-medium text-center">
