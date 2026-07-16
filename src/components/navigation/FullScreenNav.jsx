@@ -6,6 +6,7 @@ import NavContext, { NavbarContext } from "../../context/NavContext";
 import { Link } from "react-router-dom";
 
 const FullScreenNav = () => {
+
   const fullNavLinksRef = useRef(null);
   const fullScreenRef = useRef(null);
   const [navOpen, setNavOpen] = useContext(NavbarContext);
@@ -107,7 +108,9 @@ const FullScreenNav = () => {
           </div>
         </div>
         <div className=" py-10">
-         <Link to="/projects">
+         <Link to="/projects" onClick={()=>{
+          setNavOpen(false)
+         }}>
           <div className="cursor-pointer link origin-top relative  border-t-2 border-white">
             <h1 className="text-[10vw] md:text-[7vw] uppercase text-white font-medium text-center">
               Projects
@@ -152,7 +155,9 @@ const FullScreenNav = () => {
             </div>
           </div>
          </Link>
-
+<Link to="/agence" onClick={()=>{
+  setNavOpen(false)
+}}>
           <div className="cursor-pointer link origin-top relative border-t-2 border-b-2  border-white">
             <h1 className= "text-[10vw] md:text-[7vw] uppercase text-white font-medium text-center">
               agency
@@ -196,6 +201,12 @@ const FullScreenNav = () => {
               </div>
             </div>
           </div>
+</Link>
+
+
+
+
+
         </div>
       </div>
     </div>
