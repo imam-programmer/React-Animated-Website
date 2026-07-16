@@ -60,7 +60,7 @@ const Agence = () => {
       <div className="section1">
         <div
           ref={imageDivRef}
-          className="h-[20vw] w-[15vw] rounded-3xl absolute top-50 left-[30vw] overflow-auto"
+          className="h-[60vw] smd:h-[40vw] lg:h-[20vw] lg:w-[15vw] rounded-3xl absolute md:top-50 bottom-55 md:bottom-0 left-[30vw] overflow-auto"
         >
           <img
             ref={imageRef}
@@ -69,13 +69,13 @@ const Agence = () => {
             alt=""
           />
         </div>
-        <div className="mt-[50vh] relative">
-          <h1 className="text-[20vw] uppercase leading-[17vw] text-center">
+        <div className="mt-[30vh] md:mt-[50vh] relative">
+          <h1 className="text-[20vw]  uppercase leading-[17vw] text-center">
             Soixan7e <br /> douze
           </h1>
         </div>
-        <div className="pl-[40%] mt-20 relative">
-          <p className="text-5xl p">
+        <div className="sm:pl-[40%] mt-10 sm:mt-20 relative">
+          <p className="xl:text-5xl text-2xl lg:text-4xl md:text-3xl p">
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp;Notre curiosite nourrit notre creativite. On
             reste humbles et on dit non aux vivante. Elle a des valeurs, une
